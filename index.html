@@ -10,7 +10,7 @@
   </head>
   <body>
     <main class="d-flex flex-nowrap">    
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 250px;">
+        <div id="sidebar" class="d-flex flex-column p-3 bg-body-tertiary">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <span class="fs-4">Michaelsoft Teams</span>
             </a>
@@ -56,18 +56,51 @@
             </div>
         </div>
 
-        <div class="tab-content d-flex flex-column flex-grow-1 p-3" id="nav-tabs-content">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Welcome Back</div>
-            <div class="tab-pane fade" id="nav-messages" role="tabpanel" aria-labelledby="nav-messages-tab">Nothing Here</div>
-            <div class="tab-pane fade" id="nav-call" role="tabpanel" aria-labelledby="nav-call-tab">
-                <div class="flex-row">
-                    <div class="flex-row d-flex align-content-stretch">
-                        Big Screen
+        <div class="tab-content d-flex flex-column flex-grow-1" id="nav-tabs-content">
+            <div class="tab-pane flex-column flex-grow-1 show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="p-3">
+                    Welcome Back
+                </div>
+            </div>
+            <div class="tab-pane flex-column flex-grow-1" id="nav-messages" role="tabpanel" aria-labelledby="nav-messages-tab">
+                <div class="p-3">
+                    Nothing Here
+                </div>
+            </div>
+            <div class="tab-pane flex-column flex-grow-1" id="nav-call" role="tabpanel" aria-labelledby="nav-call-tab">
+                <div class="d-flex flex-grow-1">
+                    <div class="d-flex flex-grow-1">
+                        <div class="flex-grow-1 p-3">
+                            <img src="https://placehold.co/1920x1080" id="screen-share" class="d-block m-auto justify-content-center" alt="Screen Share">
+                        </div>
+                        <div class="p-3 border-start">
+                            <img src="https://placehold.co/640x480" id="webcam" class="d-block m-auto justify-content-center" alt="Screen Share">
+                        </div>
                     </div>
                 </div>
-                <div class="flex-row">
-                    <div class="flex-row d-flex align-content-stretch">
-                        Call Functions
+                
+                <div class="d-flex border-top mt-auto">
+                    <div class="d-flex p-5 mx-auto">
+                        <div class="btn-group mx-auto" role="group" aria-label="Call controls">
+                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btncheck1">
+                                <i class="fa-solid fa-microphone fs-2 p-3"></i>
+                            </label>
+                              
+                           <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btncheck2">
+                                <i class="fa-solid fa-video fs-2 p-3"></i>
+                            </label>
+                              
+                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btncheck3">
+                                <i class="fa-solid fa-display fs-2 p-3"></i>        
+                            </label>
+
+                            <button type="button" class="btn btn-danger">
+                                <i class="fa-solid fa-phone fs-2 p-3 fa-rotate-by" style="--fa-rotate-angle: 135deg;"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

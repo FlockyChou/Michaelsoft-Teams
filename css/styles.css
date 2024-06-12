@@ -1,3 +1,6 @@
+/*
+    Makes the page full height.
+*/
 main {
     height: 100vh;
     height: -webkit-fill-available;
@@ -6,11 +9,39 @@ main {
     overflow-y: hidden;
 }
 
+#sidebar {
+    min-width: 250px;
+}
+
+/*
+    Add padding to the nav icons so text isn't hugging it.
+*/
 .nav-icon {
     margin-right: 0.5em;
 }
 
+/*
+    Override to have full-width buttons without centering text, which made it look weird.
+*/
 .nav-item button {
     width: 100%;
     text-align: left;
+}
+
+/*
+    Hack to have shown items have `display: flex` instead of `display: block`.
+    Having .d-block on the element caused issues with show/hide.
+*/
+.tab-pane.flex-column.show {
+    display: flex !important;
+}
+
+#screen-share {
+    max-width: 100%;
+    height: 100%;
+}
+
+#webcam {
+    max-width: 100%;
+    height: 100%;
 }
