@@ -17,30 +17,26 @@
 
             <hr>
 
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
+            <ul class="nav nav-pills flex-column mb-auto" id="nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link link-body-emphasis active" id="nav-home-tab" data-bs-toggle="pill" data-bs-target="#nav-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
                         <i class="fa-solid fa-house nav-icon"></i>
                         Home
+                    </button>
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-body-emphasis">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link link-body-emphasis" id="nav-messages-tab" data-bs-toggle="pill" data-bs-target="#nav-messages" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
                         <i class="fa-regular fa-comments nav-icon"></i>
                         Messages
+                    </button>
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-body-emphasis">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link link-body-emphasis" id="nav-call-tab" data-bs-toggle="pill" data-bs-target="#nav-call" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
                         <i class="fa-solid fa-phone nav-icon"></i>
                         Call
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link link-body-emphasis">
-                    <i class="fa-solid fa-gear nav-icon"></i>
-                    Settings
-                    </a>
+                    </button>
                 </li>
             </ul>
 
@@ -48,19 +44,35 @@
 
             <div class="dropdown">
             <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>mdo</strong>
+                <img src="assets/flockychou.jpg" alt="Profile Image" width="32" height="32" class="rounded-circle me-2">
+                <strong>FlockyChou</strong>
             </a>
             <ul class="dropdown-menu text-small shadow">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
                 <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>                
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>
             </div>
         </div>
-    </main>
+
+        <div class="tab-content d-flex flex-column flex-grow-1 p-3" id="nav-tabs-content">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Welcome Back</div>
+            <div class="tab-pane fade" id="nav-messages" role="tabpanel" aria-labelledby="nav-messages-tab">Nothing Here</div>
+            <div class="tab-pane fade" id="nav-call" role="tabpanel" aria-labelledby="nav-call-tab">
+                <div class="flex-row">
+                    <div class="flex-row d-flex align-content-stretch">
+                        Big Screen
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-row d-flex align-content-stretch">
+                        Call Functions
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
